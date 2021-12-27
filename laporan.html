@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelompok 5 Metode Scrum</title>
+</head>
+<link href="uty.png" rel="shortcut icon">
+
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border: 2px solid black;
+            width: 800px;
+            text-align: justify;
+            margin-left: 250px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .logo{
+            width: 300px;
+            height: 270px;
+        }
+        h2, h3{
+            text-align: center;
+        }
+        hr{
+            border: 1px solid black;
+        }
+        .nama_kelompok{
+            text-align: center;
+        }
+        .bab1, .p_bab1{
+            padding-left: 20px;
+        }
+        .bab2, .p_bab2{
+            padding-left: 20px;
+        }
+        .bab3, .p_bab3{
+            padding-left: 20px;
+        }
+        .tab2{
+            padding-left: 40px;
+        }
+        .tab3{
+            padding-left: 40px;
+        }
+        /* .tahapan_agile{
+            width: 750px;
+            height: 450px;
+        } */
+        .diagramKonteks{
+            width: 800px;
+            height: 350px;
+        }
+        .relasiDatabase{
+            width: 820px;
+            height: 450px;
+        }
+        .login, .signUp{
+            width: 300px;
+            height: 350px;
+        }
+        .pemesanan, .daftarMobil, .jadwal, .laporanMobil{
+            width: 800px;
+            height: 450px;
+        }
+        .dfd_lv1{
+            width: 750px;
+            height: 400px;
+        }
+        .dfd_lv2{
+            width: 800px;
+            height: 650px;
+        }
+        .dfd_lv2_proses3{
+            width: 800px;
+            height: 500px;
+        }
+        .erd{
+            width: 800px;
+            height: 650px;
+        }
+    </style>
+
+<body>
+    <!-- COVER LAPORAN -->
+    <h2>METODE SCRUM</h2>
+    <h2>DALAM PENGEMBANGAN SISTEM INFORMASI</h2>
+    <h2>PENYEWAAN MOBIL BERBASIS WEB</h2>
+    <br>
+    <center><img class="logo" src="uty putih.png"></center>
+    <br>
+    <h3>Kelompok 5:</h3>
+    <p class="nama_kelompok">Muhammad Lukman Hakim     (5200411171)</p>
+    <p class="nama_kelompok">Septo Distiani Risky      (5200411191)</p>
+    <p class="nama_kelompok">Ardhian Alamsyah P.P      (5200411230)</p>
+    <p class="nama_kelompok">Dimas Aziz Hidayatulloh   (5200411321)</p>
+    <p class="nama_kelompok">Muhammad Irfannudin       (5200411342)</p>
+    <p class="nama_kelompok">Miftahul 'Azam Fajri      (5200411351)</p>
+    <br>
+    <h2>TEKNIK INFORMATIKA</h2>
+    <h2>FAKULTAS TEKNOLOGI & SAINS</h2>
+    <h2>UNIVERSITAS TEKNOLOGI YOGYAKARTA</h2>
+    <H2>2021</H2>
+ 
+    <br>
+    <hr>
+
+    <!-- BAB 1 -->
+    <h3>BAB I</h3>
+    <h3>PENDAHULUAN</h3>
+    <h4>1. Latar Belakang</h4>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;Perkembangan dan kemajuan teknologi informasi saat ini semakin pesat. Teknologi dan informasi bukan hal yang baru dalam kehidupan masyarakat saat ini, karena segala bentuk operasional perusahaan sudah mulai menggunakan teknologi informasi. Dengan adanya perkembangan tersebut, sumber daya manusia dituntut untuk mampu mengikuti perkembangan dan menerapkan Teknologi Informasi agar dapat bersaing dengan kompetitor. Kemudahan dan manfaat yang ada pada penggunaan internet telah dimanfaatkan oleh masyarakat dalam beberapa sector bidang. Salah satunya dalam bidang bisnis yang terus menerus mengalami perkembangan. Salah satu contoh pemanfaatan internet dalam bidang bisnis adalah bidang penjualan dan pemesanan secara online.</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;Penyewaan mobil adalah perusahaan yang menyewakan mobil untuk jangka waktu yang singkat, umumnya mulai dari beberapa jam sampai beberapa minggu. Sering diatur dengan banyak cabang lokal (yang memungkinkan pengguna untuk mengembalikan kendaraan ke lokasi yang berbeda), dan terutama terletak di dekat bandara atau daerah kota yang sibuk dan sering dilengkapi dengan situs web yang memungkinkan pemesanan online. Agen penyewaan mobil terutama melayani orang-orang yang membutuhkan kendaraan sementara, misalnya, mereka yang tidak memiliki mobil sendiri, pelancong yang berada di luar kota, atau pemilik kendaraan yang rusak atau hancur yang sedang menunggu perbaikan atau kompensasi asuransi.</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;PT. Sewa Mobil Bersama merupakan sebuah perusahaan jasa penyewaan mobil yang berlokasi di Jl. Pemuda nomor 71, Semarang, Jawa Tengah. Sistem penyewaan yang dilakukan PT. Sewa Mobil Bersama belum sepenuhnya terkomputerisasi.</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;Penyewaan mobil memiliki daftar harga yang bervariasi menurut jenis mobil dan waktu lamanya menyewa mobil tersebut. Saat ini calon penyewa masih harus datang langsung ke kantor atau menghubungi lewat telepon untuk menanyakan mobil yang tersedia, booking, hingga pembayaran langsung ditempat.</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;Terdapat beberapa masalah yang sering muncul, yaitu ketika penyewa telat mengembalikan mobil dan harus membayar denda. Karyawan yang bersangkutan harus menghitung secara manual denda yang berlaku sesuai dengan jenis dan waktu keterlambatan. Pembuatan laporan pun masih dilakukan penghitungan dengan menggunakan Ms. Excel. Dengan ini maka dibutuhkan “Aplikasi Penyewa Mobil berbasis web di PT. Sewa Mobil Bersama.</p>
+    <h4 class="bab1">1.1 Rumusan Masalah</h4>
+    <p class="p_bab1">&nbsp;&nbsp;&nbsp;&nbsp;Berdasarkan dari latar belakang masalah di atas dapat dirumuskan beberapa permaslaahan dalam penelitian ini adalah :</p>
+    <ol>
+        <li>Calon penyewa masih harus datang langsung ke kantor atau menghubungi lewat telepon untuk menanyakan mobil yang tersedia, booking, hingga pembayaran langsung ditempat.</li>
+        <li>Ketika penyewa telat mengembalikan mobil dan harus membayar denda. Karyawan yang bersangkutan harus menghitung secara manual denda yang berlaku sesuai dengan jenis dan waktu keterlambatan.</li>
+        <li>Pembuatan laporan masih dilakukan perhitungan dengan menggunakan Ms. Excel.</li>
+    </ol>
+    <h4 class="bab1">1.2 Tujuan Penelitian</h4>
+    <p class="p_bab1">Tujuan dilakukannya penelitian ini adalah sebagai berikut :</p>
+    <ol>
+        <li>Membuat aplikasi penyewaan mobil berbasis web di PT. Sewa Mobil Bersama.</li>
+        <li>Memudahkan pelanggan dalam melakukan penyewaan mobil menggunakan aplikasi penyewaan mobil yang dibuat.</li>
+    </ol>
+    <h4 class="bab1">1.4 Manfaat Penelitian</h4>
+    <p class="p_bab1">Manfaat dari dilakukannya penelitian ini adalah sebagai berikut :</p>
+    <ol>
+        <li>Bagi pelanggan, untuk meminimalisirkan waktu yang digunakan dalam memesan penyewaan mobil tanpa harus datang ketempat</li>
+        <li>Bagi pengelola, memudahkan pengelola mengelola pendataan informasi mengenai pemesanan mobil kepada pelanggan dan mengelola data pelanggan.</li>
+    </ol>
+
+    <br>
+    <hr>
+
+    <!-- BAB 2 -->
+    <h3>BAB II</h3>
+    <h3>LANDASAN TEORI</h3>
+    <h4>1. Landasan Teori</h4>
+    <h4 class="bab2">1.1 Metode Scrum</h4>
+    <p class="p_bab2">&nbsp;&nbsp;&nbsp;&nbsp;Metode Scrum merupakan metodologi yang termasuk dalam agile software development. Scrum dinilai dapat menghasilkan kualitas perangkat lunak yang baik sesuai dengan keinginan pengguna, dapat digunakan dalam proyek besar maupun kecil, dan mudah untuk mengadopsi perubahan. Menurut schwaber & sutherland scrum adalah sebuah kerangka kerja yang dapat mengatasi suatu masalah komplek yang selalu berubah, dan juga dinilai dapat memberikan kualitas produk yang baik sesuai dengan keinginan pengguna secara kreatif dan produktif.</p>
+    
+    <h4 class="bab2">1.2 Tahapan Metode Scrum</h4>
+    <center><img class="tahapan_scrum" src="tahapan_scrum.png"></center>
+    <h4 class="tab2">1) User Story</h4>
+    <p class="tab2">&nbsp;&nbsp;&nbsp;&nbsp;User story adalah deskripsi secara rinci tentang kebutuhan sistem dalam bentuk bahasa yang dapat dengan mudah dipahami oleh sudut padang end user. User story digunakan sebagai acuan untuk membuat product backlog.</p>
+    <h4 class="tab2">2) Product Backlog</h4>
+    <p class="tab2">&nbsp;&nbsp;&nbsp;&nbsp;Product backlog adalah daftar urutan segala sesuatu yang dibutuhkan dalam sistem maupun produk. Isi dari Product Backlog berisi fitur yang akan diterapkan ke dalam sistem beserta estimasi waktu pengerjaannya. Dokumen ini selalu berubah-ubah secara berkala seiring dengan perkembangan produk agar menghasilkan produk yang layak. Product Owner merupakan satu-satunya yang bertanggung jawab pengelolaan Product Backlog.</p>
+    <p class="tab2">Untuk pengerjaan proyek besar, proses pengembangan software biasanya akan dibagi menjadi beberapa unit atau modul kemudian ditugaskan ke beberapa tim pengembang. Database admin akan membuat data yang diperlukan dalam database, front-end developer bertugas membuat UI dan GUI untuk berinteraksi dengan back-end. Proses pengembangan software tersebut akan dilakukan berdasarkan pedoman dan prosedur yang sudah ditentukan sebelumnya. </p>
+    <h4 class="tab2">3) Sprint</h4>
+    <p class="tab2">&nbsp;&nbsp;&nbsp;&nbsp;Sprint adalah suatu siklus waktu dengan durasi maksimal satu bulan atau kurang. Durasi pada sprint sepanjang pengembangan produk tidak berubah. Tujuan sprint adalah untuk menyelesaikan sesuatu (Sprint Goal).</p>
+    <h4 class="tab2">4) Sprint Backlog</h4>
+    <p class="tab2">&nbsp;&nbsp;&nbsp;&nbsp;Adalah kumpulan dari item Product Backlog yang diidentifikasi oleh tim scrum. Daftar ini dikerjakan selama sprint berlangsung. Tim memilih beberapa item product backlog dan mengidentifikasi tugas-tugas yang perlu untuk diselesaikan berdasarkan user story yang ada.</p>
+    <h4 class="tab2">5) Daily Scrum</h4>
+    <p class="tab2">&nbsp;&nbsp;&nbsp;&nbsp;Adalah aktivitas harian di dalam sprint yang dilakukan scrum team untuk memeriksa apa yang telah dikerjakan, apa yang akan dikerjakan dan apa yang mungkin menjadi hambatan dalam pengerjaan proyek. Scrum team menggunakan daily scrum sebagai sarana untuk memperbaiki perkembangan produk agar tercapainya sebuah Sprint Goal</p>
+    
+    <h4 class="bab2">1.3 Sistem</h4>
+    <p class="p_bab2">&nbsp;&nbsp;&nbsp;&nbsp;Sistem yaitu sekumpulan jaringan atau elemen yang saling berhubungan dan bekerja sama dalam memproses inputan yang ditunjukan kepada sistem untuk melakukan suatu kegiatan atau menyelesaikan suatu sasaran tertentu dan mengolah inputan hingga menghasilkan keluaran yang diinginkan.</p>
+    <h4 class="bab2">1.4 Informasi</h4>
+    <p class="p_bab2">&nbsp;&nbsp;&nbsp;&nbsp;Informasi dapat diartikan sebagai suatu kumpulan dari beberapa data yang didapatkan berdasarkan fakta dan kemudian diolah menjadi informasi yang lebih beguna serta lebih berarti bagi yang siapa pun yang menerima informasi tersebut.</p>
+    <h4 class="bab2">1.5 Sistem Informasi</h4>
+    <p class="p_bab2">&nbsp;&nbsp;&nbsp;&nbsp;Sistem Informasi adalah kumpulan dari komponen sistem yang saling bekerjasama antara satu sama lain dan untuk mencapai suatu tujuan yaitu mengolah data menggunakan perangkat keras dan perangkat lunak agar menghasilkan informasi yang bermanfaat dalam pengambilan keputusan.</p>
+    <h4 class="bab2">1.6 Penyewaan</h4>
+    <p class="p_bab2">&nbsp;&nbsp;&nbsp;&nbsp;Penyewaan diartikan sebagai pemakaian sesuatu barang atau pun jasa dengan cara membayar uang sewa terebih dahulu. Dalam pengertian lainnya penyewaan adalah proses menyewakan. Yang dimaksud dengan sewa adalah meminjamkan suatu barang atau jasa, namun harus dibayar terlebih dahulu sebelum bisa digunakan. sesuai dengan kontrak perjanjian yang tertera pada peraturan penyedia jasa penyewaan yang ada.</p>
+    <h4 class="bab2">1.7 Website</h4>
+    <p class="p_bab2">&nbsp;&nbsp;&nbsp;&nbsp;Website merupakan sebuah media atau halaman informasi yang disediakan khusus untuk pengguna internet sehingga bisa diakses dimana pun dan kapan pun selama terkoneksi dengan jaringan internet. Webiste juga merupakan komponen atau kumpulan komponen yang di dalamnya terdapat teks, gambar, suara, animasi, sehingga menjadi media informasi yang sangat menarik untuk dikunjungi.</p>
+ 
+    <br>
+    <hr>
+
+    <!-- BAB III -->
+    <h3>BAB III</h3>
+    <h3>PENERAPAN METODE</h3>
+    <h4>1. User Story</h4>
+    <p class="p_bab3">&nbsp;&nbsp;&nbsp;&nbsp;User Story digunakan untuk menjelaskan siapa saja yang akan menjadi pengguna sistem beserta tugas dan tujuannya. Hal ini sangat penting karena daftar dari user story tersebut akan digunakan untuk proses pengembangan sistem selanjutnya. Berikut adalah daftar user story yang berhasil dikumpulkan.</p>
+    <center><img src="tabel_user_story.jpeg"></center>
+    <h4>2. Product Backlog</h4>
+    <p class="p_bab3">&nbsp;&nbsp;&nbsp;&nbsp;Product Backlog merupakan hal pertama yang dikerjakan dalam pembangunan sistem menggunakan metode scrum. Nantinya pada tahap ini akan dihasilkan beberapa hal seperti proses bisnis, aktor, aktivitas bisnis, struktur sistem. Isi dari product backlog diperoleh dari hasil user story yang sudah diindentifikasi sebelumnya, dan studi literatur terkait sistem yang sedang dikembangkan.</p>
+    <p class="p_bab3">Berikutnya dirancanglah sistem informasi yang meliputi :</p>
+    <h4 class="bab3">2.1 Kebutuhan Software</h4>
+    <ol>
+        <li>Sistem operasi yang digunakan yaitu Microsoft Windows 8</li>
+        <li>Web editor yang digunakan dalam membangun aplikasi yaitu Visual Studio Code</li>
+        <li>Web server yang digunakan yaitu XAMPP Control Panel v3.2.2</li>
+        <li>Database yang digunakan yaitu MySQL</li>
+        <li>Web browser yang digunakan yaitu Google Chrome </li>
+        <li>Bahasa Pemograman yang digunakan yaitu PHP</li>
+    </ol>
+    <h4 class="bab3">2.2 Kebutuhan Hardware</h4>
+    <p class="p_bab3">Hardware yang dibutuhkan untuk merancang aplikasi sewa mobil ini yaitu :</p>
+    <p class="p_bab3"><i>5.1 Komputer :</i></p>
+    <ol>
+        <li>Proccesor Intel(R) Celeron(R) CPU N2830 @ 2.16GHz 2.16 GHz</li>
+        <li>Memory 512 MB</li>
+        <li>Harddisk 1 TB</li>
+        <li>Mouse, Keyboard, Monitir, dan Printer</li>
+    </ol>
+    <p class="p_bab3"><i>5.2 Perangkat koneksi jaringan internet :</i></p>
+    <ol>
+        <li>Modulator Demodulator (Modem)</li>
+        <li>Kabel LAN (Kabel UTP, RG45)</li>
+    </ol>
+
+    <h4>3. Sprint</h4>
+    <p class="p_bab3">&nbsp;&nbsp;&nbsp;&nbsp;Tahap ketiga perancangan adalah sprint. Tahap ini yaitu sprint planning. Pada sprint planning, scrum team melakukan rapat untuk mengevaluasi daftar yang ada pada product backlog. Scrum team mendiskusikan setiap fitur yang nantinya akan dibangun oleh setiap anggota tim beserta estimasi waktu pengerjaannya.</p>
+    <center><img src="tabel_sprint.png"></center>
+
+    <h4>4. Sprint Backlog</h4>
+    <p class="p_bab3">&nbsp;&nbsp;&nbsp;&nbsp;Adalah kumpulan dari item Product Backlog yang diidentifikasi oleh tim scrum. Daftar ini dikerjakan selama sprint berlangsung. Tim memilih beberapa item product backlog dan mengidentifikasi tugas-tugas yang perlu untuk diselesaikan berdasarkan user story yang ada.</p>
+
+    <h4>5. Sprint Review</h4>
+        <p class="p_bab3">&nbsp;&nbsp;&nbsp;&nbsp;Setelah rangkaian sprint telah selesai dikerjakan, maka dihasilkan aplikasi yang akan di demonstrasikan terlebih dahulu pada tahap sprint review. Aplikasi akan diperiksa secara berkala untuk mengetahui perkembangan yang terjadi dan mengevaluasi apakah produk yang dibangun sudah sesuai kebutuhan. Selanjutnya, dilakukan pengujian untuk memeriksa apakah fitur yang sudah dikerjakan pada sprint sebelumnya sudah berjalan dengan baik. Jika terdapat fitur yang masih belum sesuai maka akan di perbaiki dan dikembangkan pada sprint berikutnya.</p>
+
+    <h4>6. Diagram Konteks</h4>
+    <center><img class="diagramKonteks" src="diagram_konteks.png"></center>
+    <center><label>Gambar 1. Diagram Konteks</label></center>
+    
+    <h4>7. DFD Level 1</h4>
+    <p class="p_bab3">&nbsp;&nbsp;&nbsp;&nbsp;DFD level 1 adalah tahapan lebih lanjut tentang DFD level 0, dimana semua proses yang ada pada DFD level 0 akan dirinci dengan lengkap sehingga lebih lengkap dan detail. Proses-proses utama yang ada akan dipech menjadi sub-proses.</p>
+    <center><img class="dfd_lv1" src="dfd_lv1.jpeg"></center>
+    <center><label>Gambar 2. DFD Level 1</label></center>
+    
+    <h4>8. DFD level 2</h4>
+    <center><img class="dfd_lv2" src="dfd_lv2.jpeg"></center>
+    <center><label>Gambar 3. DFD Level 2</label></center>
+
+    <h4>9. DFD level 2 Proses 3</h4>
+    <center><img class="dfd_lv2_proses3" src="dfd_lv2_proses3.png"></center>
+    <center><label>Gambar 4. DFD Level 2 Pproses 3</label></center>
+
+    <h4>10. ERD</h4>
+    <p class="p_bab3">&nbsp;&nbsp;&nbsp;&nbsp;ERD adalah model atau rancangan untuk membuat database, supaya lebih mudah dalam menggambarkan data yang memiliki hubungan atau relasi dalam bentuk sebuah desain. Dengan adanya ER diagram, maka sistem database yang terbentuk dapat digambarkan dengan lebih terstruktur dan terlihat rapi.</p>
+    <center><img class="erd" src="ERD Scrum.png"></center>
+    <center><label>Gambar 5. Entity Relationship Diagram</label></center>
+    
+    <h4>11. Relasi Database</h4>
+    <p class="p_bab3">&nbsp;&nbsp;&nbsp;&nbsp;Database relasional adalah kumpulan item data dengan hubungan yang telah ditentukan sebelumnya. Berbagai item ini disusun menjadi satu set tabel dengan kolom dan baris. Tabel digunakan untuk menyimpan informasi tentang objek yang akan direpresentasikan dalam database. Tiap kolom pada tabel memuat jenis data tertentu dan bidang menyimpan nilai aktual atribut. Baris pada tabel merepresentasikan kumpulan nilai terkait dari satu objek atau entitas. Tiap baris pada tabel dapat ditandai dengan pengidentifikasi unik yang disebut kunci utama, dan baris di antara beberapa tabel dapat dibuat saling terkait menggunakan kunci asing. Data ini dapat diakses dengan berbagai cara tanpa menyusun ulang tabel basis data itu sendiri.</p>
+    <center><img class="relasiDatabase" src="relasi_database.png"></center>
+    <center><label>Gambar 6. Relasi Database</label></center>
+    
+    <h4>12. Desain Sistem</h4>
+    <label class="bab3"><i>Implementasi Antar Muka / User Interface</i></label>
+    <h4 class="bab3">12.1 Tampilan Login</h4>
+    <center><img class="login" src="login.jpeg"></center>
+    
+    <h4 class="bab3">12.2 Tampilan Sign Up</h4>
+    <center><img class="signUp" src="signUp.jpeg"></center>
+    
+    <h4 class="bab3">12.3 Tampilan Pemesanan</h4>
+    <center><img class="pemesanan" src="Pemesanan.png"></center>
+    
+    <h4 class="bab3">12.4 Tampilan Daftar Mobil</h4>
+    <center><img class="daftarMobil" src="Daftar Mobil.png"></center>
+    
+    <h4 class="bab3">12.5 Tampilan Jadwal</h4>
+    <center><img class="jadwal" src="Jadwal.png"></center>
+    
+    <h4 class="bab3">12.6 Tampilan laporan</h4>
+    <center><img class="laporanMobil" src="Laporan.png"></center>
+
+    <br>
+</body>
+</html>
